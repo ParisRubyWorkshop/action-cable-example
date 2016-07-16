@@ -27,5 +27,10 @@ We'll also be using PostgreSQL as our database. On Mac OS, you can install it wi
 
 And of course, once you've forked this repo, you need to run `bundle install`.
 
-Create the database with `rake db:migrate`
+Create the database with `rake db:create`
 
+Migrate the database with `rake db:migrate`
+
+## Domain
+
+[See the original article](https://blog.heroku.com/real_time_rails_implementing_websockets_in_rails_5_with_action_cable#domain-model)
