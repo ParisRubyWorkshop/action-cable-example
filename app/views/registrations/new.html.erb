@@ -5,10 +5,10 @@
     <div class="auth-form well">
     <%= form_for(User.new, url: signup_path) do |f| %>
 
-      <%=f.label :username%>
+      <%=f.label :name%>
       <div class="input-group">
         <span class="input-group-addon">@</span>
-          <%= f.text_field :username, class: "form-control"%>
+          <%= f.text_field :name, class: "form-control"%>
       </div>
 
       <div class="actions">

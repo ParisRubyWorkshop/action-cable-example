@@ -12,7 +12,7 @@ class SessionsController < ApplicationController
       session[:user_id] = user.id
       redirect_to chatrooms_path
     else
-      redirect_to login_path, flash[:notice] =  {username: ["doesn't exist"]}
+      redirect_to login_path, flash[:notice] =  {name: ["doesn't exist"]}
     end
   end
 
@@ -24,7 +24,7 @@ class SessionsController < ApplicationController
   private
 
     def user_params
-      params.require(:user).permit(:username)
+      params.require(:user).permit(:name)
     end
 end
 
