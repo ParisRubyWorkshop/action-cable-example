@@ -39,4 +39,22 @@ The only objects we're dealing with are users, channels and messages. Check out 
 
 ## Using ActionCable
 
+First, we need to modify the html so that sending the message happens by pressing Enter instead of submitting the form.
+Add this to `app/assets/javascripts/chatrooms.js`:
+
+```
+$(document).ready(function() {
+  submitNewMessage();
+});
+
+function submitNewMessage(){
+  $('textarea#message_content').keydown(function(event) {
+    if (event.keyCode == 13) {
+        $('[data-send="message"]').click();
+        $('[data-textarea="message"]').val(" ")
+        return false;
+     }
+  });
+}
+```
 
