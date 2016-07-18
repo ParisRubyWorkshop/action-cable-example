@@ -5,14 +5,16 @@ Let's build a chat with ActionCable!
 
 This kata borrows heavily from [Sophie DeBenedetto's awesome tutorial on ActionCable](https://blog.heroku.com/archives/2016/5/9/real_time_rails_implementing_websockets_in_rails_5_with_action_cable).
 
-ActionCable is a new component of Rails that allows for real time features.
+This app is a small chat system: users can send messages on different channels. However, all the pages are static, which means you have to refresh the page to see if new messages have been posted.
+
+The point of this kata is to fix that by using ActionCable.
 
 
 ## Setup
 
 You'll need to be running ruby 2.3.0 (we recommend using [rbenv](https://github.com/rbenv/rbenv) to manage multiple versions of ruby).
 
-ActionCable uses Redis to persist connection data. You can install Redis like so:
+ActionCable uses Redis to persist connection data. You can install Redis like this:
 * For Mac OS: `brew install redis`
 * For Linux:
 ```
@@ -33,4 +35,8 @@ Migrate the database with `rake db:migrate`
 
 ## Domain
 
-[See the original article](https://blog.heroku.com/real_time_rails_implementing_websockets_in_rails_5_with_action_cable#domain-model)
+The only objects we're dealing with are users, channels and messages. Check out the models and the `db/schema.rb` file to understand them.
+
+## Using ActionCable
+
+
