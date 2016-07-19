@@ -10,6 +10,10 @@ gem 'puma', '~> 3.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
+gem 'turbolinks', '~> 5.x'
+
+gem 'jbuilder', '~> 2.0'
+
 
 
 # Use Redis adapter to run Action Cable in production
