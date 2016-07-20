@@ -58,3 +58,5 @@ function submitNewMessage(){
 }
 ```
 
+
+Then, [follow the steps](https://blog.heroku.com/real_time_rails_implementing_websockets_in_rails_5_with_action_cable#step-1-establish-the-socket-connection-server-side) from the original article.
